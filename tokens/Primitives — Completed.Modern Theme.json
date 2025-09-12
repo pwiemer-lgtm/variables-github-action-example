@@ -3,7 +3,7 @@
     "gray": {
       "50": {
         "$type": "color",
-        "$value": "#f1f1f1",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -17,7 +17,7 @@
       },
       "200": {
         "$type": "color",
-        "$value": "#d3d3d3",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -31,7 +31,7 @@
       },
       "400": {
         "$type": "color",
-        "$value": "#afafaf",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -45,7 +45,7 @@
       },
       "600": {
         "$type": "color",
-        "$value": "#7c7c7c",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -59,7 +59,7 @@
       },
       "800": {
         "$type": "color",
-        "$value": "#343434",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -73,7 +73,7 @@
       },
       "900": {
         "$type": "color",
-        "$value": "#202020",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -89,7 +89,7 @@
     "brand": {
       "watermelon": {
         "$type": "color",
-        "$value": "#7db8a9",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -103,7 +103,7 @@
       },
       "cherry": {
         "$type": "color",
-        "$value": "#ff9eab",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -117,7 +117,7 @@
       },
       "pear": {
         "$type": "color",
-        "$value": "#def358",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -131,7 +131,7 @@
       },
       "mushroom": {
         "$type": "color",
-        "$value": "#f1d367",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -145,7 +145,7 @@
       },
       "radish": {
         "$type": "color",
-        "$value": "#ffcbb7",
+        "$value": "#000000",
         "$description": "",
         "$extensions": {
           "com.figma": {
