@@ -1,6 +1,6 @@
 {
-  "background": {
-    "background-primary": {
+  "surface": {
+    "surface-primary": {
       "$type": "color",
       "$value": "{color.gray.50}",
       "$description": "",
@@ -14,7 +14,7 @@
         }
       }
     },
-    "background-secondary": {
+    "surface-secondary": {
       "$type": "color",
       "$value": "{color.gray.800}",
       "$description": "",
@@ -28,7 +28,7 @@
         }
       }
     },
-    "background-invert": {
+    "surface-invert": {
       "$type": "color",
       "$value": "{color.gray.900}",
       "$description": "",
@@ -42,7 +42,7 @@
         }
       }
     },
-    "background-brand": {
+    "surface-brand": {
       "$type": "color",
       "$value": "{color.brand.watermelon}",
       "$description": "",
