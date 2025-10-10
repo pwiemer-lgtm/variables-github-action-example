@@ -1,4 +1,5 @@
 name: Sync tokens to Figma
+
 on:
   workflow_dispatch:
     inputs:
@@ -24,7 +25,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Sync tokens to Figma file
+      - name: 🔍 Check for duplicate token collections
+        run: npm run check-duplicates
+
+      - name: 🚀 Sync tokens to Figma file
         run: npm run sync-tokens-to-figma
         env:
           FILE_KEY: ${{ github.event.inputs.file_key }}

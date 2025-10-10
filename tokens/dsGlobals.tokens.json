@@ -1,0 +1,180 @@
+{
+  "ds": {
+    "radius": {
+      "global": {
+        "control": {
+          "md": {
+            "$type": "number",
+            "$value": "{radius.control.md}",
+            "$description": "",
+            "$extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "CORNER_RADIUS"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        },
+        "input": {
+          "m": {
+            "$type": "number",
+            "$value": "{radius.input.m}",
+            "$description": "",
+            "$extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "CORNER_RADIUS"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "space": {
+      "global": {
+        "none": {
+          "$type": "number",
+          "$value": "{space.none}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "GAP",
+                "PARAGRAPH_INDENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "xxxs": {
+          "$type": "number",
+          "$value": "{space.xxxs}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "GAP",
+                "PARAGRAPH_INDENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "xxs": {
+          "$type": "number",
+          "$value": "{space.xxs}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "GAP",
+                "PARAGRAPH_INDENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "xs": {
+          "$type": "number",
+          "$value": "{space.xs}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "GAP",
+                "PARAGRAPH_INDENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "sm": {
+          "$type": "number",
+          "$value": "{space.sm}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "GAP",
+                "PARAGRAPH_INDENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "md": {
+          "$type": "number",
+          "$value": "{space.md}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "GAP",
+                "PARAGRAPH_INDENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      }
+    },
+    "opacity": {
+      "global": {
+        "none": {
+          "$type": "number",
+          "$value": "{opacity.none}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "OPACITY"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "hover": {
+          "$type": "number",
+          "$value": "{opacity.hover}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "OPACITY"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "pressed": {
+          "$type": "number",
+          "$value": "{opacity.pressed}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "OPACITY"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

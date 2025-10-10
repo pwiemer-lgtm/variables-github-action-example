@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Context Switcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: var(--ds-interactive-primary-accent);
+            color: var(--ds-text-and-icon-on-primary);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .demo-section {
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid var(--ds-border-default);
+            border-radius: 8px;
+            background: var(--ds-surface-primary);
+        }
+
+        .color-demo {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Design Token Context Switcher</h1>
+
+    <div class="controls">
+        <label for="context-select">Select Context:</label>
+        <select id="context-select">
+            <option value="vg-b2b-light">VG B2B Light</option>
+            <option value="vg-b2b-dark">VG B2B Dark</option>
+            <option value="vg-b2c-light">VG B2C Light</option>
+            <option value="vg-b2c-dark">VG B2C Dark</option>
+        </select>
+        <button onclick="loadContext()">Load Context</button>
+    </div>
+
+    <div class="demo-section">
+        <h2>Interactive Colors</h2>
+        <div class="color-demo">
+            <div class="color-box" style="background: var(--ds-interactive-primary-accent);">
+                Primary Accent
+            </div>
+            <div class="color-box" style="background: var(--ds-interactive-primary-destructive);">
+                Primary Destructive
+            </div>
+            <div class="color-box" style="background: var(--ds-interactive-secondary);">
+                Secondary
+            </div>
+            <div class="color-box" style="background: var(--ds-interactive-disabled);">
+                Disabled
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Text Colors</h2>
+        <div class="color-demo">
+            <div class="color-box" style="background: var(--ds-text-and-icon-primary);">
+                Primary Text
+            </div>
+            <div class="color-box" style="background: var(--ds-text-and-icon-secondary);">
+                Secondary Text
+            </div>
+            <div class="color-box" style="background: var(--ds-text-and-icon-accent);">
+                Accent Text
+            </div>
+            <div class="color-box" style="background: var(--ds-text-and-icon-destructive);">
+                Destructive Text
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Border Colors</h2>
+        <div class="color-demo">
+            <div class="color-box" style="background: var(--ds-border-default);">
+                Default Border
+            </div>
+            <div class="color-box" style="background: var(--ds-border-active);">
+                Active Border
+            </div>
+            <div class="color-box" style="background: var(--ds-border-accent);">
+                Accent Border
+            </div>
+            <div class="color-box" style="background: var(--ds-border-focus);">
+                Focus Border
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { tokens } from './dist/tokens.js';
+        
+        window.tokens = tokens;
+        
+        function loadContext() {
+            const context = document.getElementById('context-select').value;
+            const contextTokens = tokens[context];
+            
+            console.log(`Loading context: ${context}`, contextTokens);
+            
+            // Update CSS custom properties
+            const root = document.documentElement;
+            
+            // Update interactive colors
+            root.style.setProperty('--ds-interactive-primary-accent', contextTokens.interactive.primaryAccent);
+            root.style.setProperty('--ds-interactive-primary-destructive', contextTokens.interactive.primaryDestructive);
+            root.style.setProperty('--ds-interactive-secondary', contextTokens.interactive.secondary);
+            root.style.setProperty('--ds-interactive-disabled', contextTokens.interactive.disabled);
+            
+            // Update text colors
+            root.style.setProperty('--ds-text-and-icon-primary', contextTokens.textAndIcon.primary);
+            root.style.setProperty('--ds-text-and-icon-secondary', contextTokens.textAndIcon.secondary);
+            root.style.setProperty('--ds-text-and-icon-accent', contextTokens.textAndIcon.accent);
+            root.style.setProperty('--ds-text-and-icon-destructive', contextTokens.textAndIcon.destructive);
+            
+            // Update border colors
+            root.style.setProperty('--ds-border-default', contextTokens.border.default);
+            root.style.setProperty('--ds-border-active', contextTokens.border.active);
+            root.style.setProperty('--ds-border-accent', contextTokens.border.accent);
+            root.style.setProperty('--ds-border-focus', contextTokens.border.focus);
+            
+            // Update background
+            root.style.setProperty('--ds-background-primary', contextTokens.background.primary);
+            root.style.setProperty('--ds-surface-primary', contextTokens.surface.primary);
+            
+            // Update body background
+            document.body.style.background = contextTokens.background.primary;
+            document.body.style.color = contextTokens.textAndIcon.primary;
+        }
+        
+        // Load initial context
+        loadContext();
+        
+        // Make function available globally
+        window.loadContext = loadContext;
+    </script>
+</body>
+
+</html>

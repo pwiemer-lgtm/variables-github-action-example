@@ -1,0 +1,11 @@
+src/
+scripts/
+node_modules/
+*.test.ts
+*.test.json
+tsconfig*.json
+jest.config.ts
+.env*
+.github/
+tokens/
+style-dictionary.config.js

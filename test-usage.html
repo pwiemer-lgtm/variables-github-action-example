@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Design Tokens Test</title>
+    <link rel="stylesheet" href="dist/tokens.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: var(--ds-space-global-md);
+            background-color: var(--ds-background-primary);
+            color: var(--ds-textAndIcon-primary);
+        }
+
+        .test-button {
+            background-color: var(--ds-interactive-primaryAccent);
+            color: var(--ds-textAndIcon-onPrimary);
+            border-radius: var(--ds-radius-global-control-md);
+            padding: var(--ds-space-global-sm);
+            border: 1px solid var(--ds-border-active);
+            cursor: pointer;
+            font-size: 16px;
+            margin: var(--ds-space-global-xs);
+        }
+
+        .test-button:hover {
+            opacity: var(--ds-opacity-global-hover);
+        }
+
+        .test-card {
+            background-color: var(--ds-surface-primary);
+            border: 1px solid var(--ds-border-default);
+            border-radius: var(--ds-radius-global-control-md);
+            padding: var(--ds-space-global-md);
+            margin: var(--ds-space-global-sm);
+        }
+
+        .test-text {
+            color: var(--ds-textAndIcon-primary);
+            font-size: 16px;
+            margin: var(--ds-space-global-xs) 0;
+        }
+
+        .test-text-secondary {
+            color: var(--ds-textAndIcon-secondary);
+            font-size: 14px;
+        }
+
+        .destructive-button {
+            background-color: var(--ds-interactive-primaryDestructive);
+            color: var(--ds-textAndIcon-onPrimary);
+        }
+
+        .disabled-button {
+            background-color: var(--ds-interactive-disabled);
+            color: var(--ds-textAndIcon-disabled);
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎨 Design Tokens Test</h1>
+
+    <div class="test-card">
+        <h2 class="test-text">Card with Design Tokens</h2>
+        <p class="test-text-secondary">This card uses CSS variables from your design tokens.</p>
+
+        <button class="test-button">Primary Button</button>
+        <button class="test-button destructive-button">Destructive Button</button>
+        <button class="test-button disabled-button">Disabled Button</button>
+    </div>
+
+    <div class="test-card">
+        <h2 class="test-text">Token Values</h2>
+        <p class="test-text-secondary">Check the console to see JavaScript token values.</p>
+    </div>
+
+    <script type="module">
+        // Test JavaScript tokens
+        import { tokens } from './dist/tokens.js';
+        
+        console.log('🎨 Design Tokens Test');
+        console.log('========================');
+        console.log('Available token categories:', Object.keys(tokens));
+        console.log('Interactive tokens:', tokens.interactive);
+        console.log('Space tokens:', tokens.space);
+        console.log('Radius tokens:', tokens.radius);
+        console.log('Primary accent color:', tokens.interactive.primaryAccent);
+        console.log('Medium space:', tokens.space.global.md);
+        console.log('Control radius:', tokens.radius.global.control.md);
+    </script>
+</body>
+
+</html>
