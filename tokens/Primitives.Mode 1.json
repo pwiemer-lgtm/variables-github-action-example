@@ -37,7 +37,7 @@
   },
   "mono-200-dark": {
     "$type": "color",
-    "$value": "#8897ad",
+    "$value": "#9897ad",
     "$description": "",
     "$extensions": {
       "com.figma": {
