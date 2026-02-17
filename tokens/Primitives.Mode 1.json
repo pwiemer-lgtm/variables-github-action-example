@@ -1,0 +1,50 @@
+{
+  "mono-100-light": {
+    "$type": "color",
+    "$value": "#ffffff",
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      }
+    }
+  },
+  "mono-200-light": {
+    "$type": "color",
+    "$value": "#d4d7e3",
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      }
+    }
+  },
+  "mono-100-dark": {
+    "$type": "color",
+    "$value": "#000000",
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      }
+    }
+  },
+  "mono-200-dark": {
+    "$type": "color",
+    "$value": "#8897ad",
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      }
+    }
+  }
+}
